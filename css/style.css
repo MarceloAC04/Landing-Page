@@ -1,0 +1,47 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes genéricas */
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid yellow;
+}
+
+/* header */
+
+header {
+    height: 60px;
+    background-color: #F9003D;
+}
+
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    border: 2px solid white;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+
