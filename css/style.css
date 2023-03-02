@@ -74,9 +74,11 @@ main .banner .layout-grid {
     
 }
 
-hr .line {
-    width: 200px;
-    color: yellow;
+main .banner .layout-grid hr  {
+    margin-bottom: 10px;
+    border-width: 1px;
+    width: 545px;
+    border-color: #FFAF00;
 
 }
 
