@@ -1,3 +1,9 @@
+/* imports */
+@font-face {
+    font-family: "Bebas neue";
+    src: url(../assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
 /* reset */
 * {
     margin: 0;
@@ -10,7 +16,6 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid yellow;
 }
 
 /* header */
@@ -31,17 +36,62 @@ header nav {
     justify-content: space-between;
     align-items: center;
     width: 600px;
-    border: 2px solid white;
+
     
 }
 
 header nav a {
     text-decoration: none;
-    font-style: normal;
+    font-family: "Bebas neue";
     font-size: 18px;
-    font-weight: 400;
     color: white;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    border-radius: 8px;
 }
+
+header nav a:hover{
+    text-shadow: 2px 2px 5px rgba(249, 0, 61, 0.3);
+    background-color: white;
+    color: #F9003D;
+}
+
+/* Main */
+
+main .banner {
+    position: relative;
+    height: 740px;
+    background-image: url(../assets/Images/imagem-fundo-banner\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+main .banner .layout-grid {
+    position: absolute;
+    left: 121px;
+    top: 226px;
+    
+}
+
+hr .line {
+    width: 200px;
+    color: yellow;
+
+}
+
+main .banner .layout-grid h1{
+    font-size: 96px;
+    font-family: "Bebas neue";
+    color: white;
+}
+
+
+main .banner .layout-grid p {
+    font-size: 53px;
+    font-family: "Bebas neue";
+    color: #F9003D;
+}
+
 
 
