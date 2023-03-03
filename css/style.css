@@ -4,11 +4,20 @@
     src: url(../assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Open sans";
+    src: url(../assets/Fonts/Open_sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+
 /* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color:  #080324;
 }
 
 /* Classes genéricas */
@@ -74,8 +83,8 @@ main .banner .layout-grid {
     
 }
 
-main .banner .layout-grid hr  {
-    margin-bottom: 10px;
+main .banner .layout-grid hr   {
+    margin-top: 13px;
     border-width: 1px;
     width: 545px;
     border-color: #FFAF00;
@@ -86,14 +95,103 @@ main .banner .layout-grid h1{
     font-size: 96px;
     font-family: "Bebas neue";
     color: white;
+    font-weight: normal;
 }
 
 
 main .banner .layout-grid p {
     font-size: 53px;
-    font-family: "Bebas neue";
+    margin-top: 29px;
+    font-family: 'Courier New', Courier, monospace;
     color: #F9003D;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
+main .banner .layout-grid #mouse {
+    margin-top: 29px;
+}
 
+/* sobre = section  */
+
+main .sobre {
+    height: 800px;
+}
+
+main .section-flex {
+    display: flex;
+
+}
+
+main  .sobre div {
+    margin-left: 140px;
+    margin-top: 55px;
+    
+}
+main  .sobre div h1 {
+    margin-bottom: 64px;
+    color: #F9003D;
+    font-family: "Bebas neue";
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 77px;
+}
+
+main .sobre #sobre {
+    width: 491px;
+    height: 476px;
+}
+
+main .sobre article {
+    margin-right: 155px;
+    margin-top: 196px;
+}
+
+main .sobre article h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+main .sobre article h3 {
+    color: #FFAF00;
+    margin-top: 10px;
+    font-family: "Bebas neue";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 77px;
+}
+
+main .sobre article p{
+    margin-top: 10px;
+    color: white;
+    font-family: "Open sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* genérica = div */
+
+main .genérica {
+    height: 200px;
+    background-image: url(../assets/Images/imagem-fundo-info\ 1.png);
+}
+
+main .genérica-flex {
+    display: flex;
+    
+}
+
+main .genérica article h4 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+
+}
 
