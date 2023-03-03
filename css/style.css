@@ -176,15 +176,21 @@ main .sobre article p{
     line-height: 25px;
 }
 
-/* genérica = div */
+/* genérica =  section*/
 
 main .genérica {
     height: 200px;
     background-image: url(../assets/Images/imagem-fundo-info\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
 }
 
 main .genérica-flex {
     display: flex;
+    justify-content: space-between;
     
 }
 
@@ -192,6 +198,95 @@ main .genérica article h4 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
+    font-style: bold;
 
 }
 
+
+main .genérica article p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #A259F7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-style: bold;
+    text-transform: uppercase;
+    
+    border: 2px solid #A259F7;
+    width: 289px;
+    height: 100px;
+
+}
+
+/* footer */
+
+/* .endereço = section footer */
+
+footer {
+    background-image: url(../assets/Images/imagem-fundo-ranking\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 598px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+footer .endereço {
+    margin-top: 81px;
+    margin-left: 264px;
+}
+
+footer .endereço h5 {
+    color: #FFAF00;
+    font-size: 64px;
+    font-family: "Bebas neue";
+    font-weight: 400;
+    line-height: 76px;
+    text-transform: uppercase;
+}
+
+footer .endereço .borda {
+    position: relative;
+    border: 2px solid #340B65;
+    background-color: #010010;
+    width: 899px;
+    height: 203px;
+    
+}
+
+footer .endereço .borda p {
+    color: #A259F7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 55px;
+    margin-left: 66px;
+
+}
+
+footer .endereço #mapa {
+    position: absolute;
+    top: 2px;
+    left: 65%;
+    height: 195px;
+}
+
+footer .rodapé {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9003D;
+    height: 82px;
+}
+
+footer .rodapé p {
+    color: white;
+    font-family: "Open sans";
+    font-size: 18px;
+}
