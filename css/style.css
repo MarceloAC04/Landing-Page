@@ -20,6 +20,9 @@ body {
     background-color:  #080324;
 }
 
+/* DESKTOP FIRST */
+
+
 /* Classes genéricas */
 .layout-grid {
     width: 100%;
@@ -64,6 +67,10 @@ header nav a:hover{
     text-shadow: 2px 2px 5px rgba(249, 0, 61, 0.3);
     background-color: white;
     color: #F9003D;
+}
+
+header #menu-mobile {
+    display: none;
 }
 
 /* Main */
@@ -289,4 +296,23 @@ footer .rodapé p {
     color: white;
     font-family: "Open sans";
     font-size: 18px;
+}
+
+/* MEDIA QUERIES */
+/* tablets >=768px ate 991px*/
+@media screen and (max-width: 991px) {
+    
+}
+
+/* smartphones .=0 ate 767px */
+@media screen and (max-width: 767px) {
+    header #menu-mobile {
+        display: block;
+        color: white;
+    }
+
+    header nav {
+        display: none;
+    }
+
 }

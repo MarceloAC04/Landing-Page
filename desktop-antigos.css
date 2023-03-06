@@ -1,0 +1,7 @@
+/* desktops antigos >=992px */
+@media screen and (min-width: 992px) {
+    h1 {
+        color: red;
+        text-transform: uppercase;
+    }
+}
