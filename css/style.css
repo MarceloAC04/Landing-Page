@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color:  #080324;
+    background-color: #080324;
 }
 
 /* DESKTOP FIRST */
@@ -41,15 +41,16 @@ header .header-flex {
     display: flex;
     justify-content: flex-end;
     height: 100%;
-    
+
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 600px;
 
-    
+
 }
 
 header nav a {
@@ -63,7 +64,7 @@ header nav a {
     border-radius: 8px;
 }
 
-header nav a:hover{
+header nav a:hover {
     text-shadow: 2px 2px 5px rgba(249, 0, 61, 0.3);
     background-color: white;
     color: #F9003D;
@@ -76,48 +77,44 @@ header #menu-mobile {
 /* Main */
 
 main .banner {
-    position: relative;
     height: 740px;
     background-image: url(../assets/Images/imagem-fundo-banner\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
-}
-main .banner .layout-grid {
-    position: absolute;
-    left: 121px;
-    top: 226px;
-    
+    background-position: bottom;
 }
 
-main .banner .layout-grid hr   {
-    margin-top: 13px;
-    border-width: 1px;
+main .banner-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+main .banner-flex #banner-infobox {
+    width: 560px;
+}
+
+main .banner-flex h1 {
+    font-family: "Bebas neue";
+    font-size: 96px;
+    color: white;
+}
+
+main .banner-flex hr {
     width: 545px;
     border-color: #FFAF00;
-
+    margin-bottom: 30px;
 }
 
-main .banner .layout-grid h1{
-    font-size: 96px;
-    font-family: "Bebas neue";
-    color: white;
-    font-weight: normal;
-}
-
-
-main .banner .layout-grid p {
-    font-size: 53px;
-    margin-top: 29px;
+main .banner-flex p {
+    margin-bottom: 40px;
     font-family: 'Courier New', Courier, monospace;
-    color: #F9003D;
+    font-size: 53px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #F9003D;
 }
 
-main .banner .layout-grid #mouse {
-    margin-top: 29px;
-}
 
 /* sobre = section  */
 
@@ -130,12 +127,13 @@ main .section-flex {
 
 }
 
-main  .sobre div {
+main .sobre div {
     margin-left: 140px;
     margin-top: 55px;
-    
+
 }
-main  .sobre div h1 {
+
+main .sobre div h1 {
     margin-bottom: 64px;
     color: #F9003D;
     font-family: "Bebas neue";
@@ -174,7 +172,7 @@ main .sobre article h3 {
     line-height: 77px;
 }
 
-main .sobre article p{
+main .sobre article p {
     margin-top: 10px;
     color: white;
     font-family: "Open sans";
@@ -190,7 +188,7 @@ main .genérica {
     background-image: url(../assets/Images/imagem-fundo-info\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     display: flex;
     align-items: center;
 }
@@ -198,7 +196,7 @@ main .genérica {
 main .genérica-flex {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 main .genérica article h4 {
@@ -214,13 +212,13 @@ main .genérica article p {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: #A259F7;
     font-family: 'Courier New', Courier, monospace;
     font-size: 28px;
     font-style: bold;
     text-transform: uppercase;
-    
+
     border: 2px solid #A259F7;
     width: 289px;
     height: 100px;
@@ -236,7 +234,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 598px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -263,7 +261,7 @@ footer .endereço .borda {
     background-color: #010010;
     width: 899px;
     height: 203px;
-    
+
 }
 
 footer .endereço .borda p {
@@ -300,9 +298,7 @@ footer .rodapé p {
 
 /* MEDIA QUERIES */
 /* tablets >=768px ate 991px*/
-@media screen and (max-width: 991px) {
-    
-}
+@media screen and (max-width: 991px) {}
 
 /* smartphones .=0 ate 767px */
 @media screen and (max-width: 767px) {
@@ -311,45 +307,64 @@ footer .rodapé p {
         left: 0;
         opacity: 1;
     }
+
     /* temporariamente */
     /* main, footer {
         display: none;
     } */
-    
+
     header #menu-mobile {
         display: block;
     }
-   
-    
+
+
 
     header nav {
-       position: fixed;
-       z-index: 1000;
-       top: 60px;
-       left: -80vh;  /*viewport width*/
-       width: 80vw;  /*view port height*/
-       height: calc(100vh - 60px);
-      
-       background-color: #F9003D;
-       flex-direction: column;
-       justify-content: space-evenly;
+        position: fixed;
+        z-index: 1000;
+        top: 60px;
+        left: -80vh;
+        /*viewport width*/
+        width: 80vw;
+        /*view port height*/
+        height: calc(100vh - 60px);
 
-       opacity: 0;
-       transition: left 0.4s, opacity 0.6s;
+        background-color: #F9003D;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        opacity: 0;
+        transition: left 0.4s, opacity 0.6s;
     }
 
-   header nav a {
-    border-left: 3px solid white;
-   }
-  
-   /* banner  */
-   main .banner .layout-grid h1 {
-    font-size: 40px;
-   }
+    header nav a {
+        border-left: 3px solid white;
+    }
 
-   main .banner .layout-grid hr {
-    width: 200px;
-   }
+    /* banner  */
+    main .banner-flex {
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 80px;
+    }
+
+    main .banner-flex h1 {
+        font-size: 40px;
+        text-align: justify;
+        max-width: 260px;
+    }
+
+    main .banner-flex hr {
+        max-width: 225px;
+    }
+
+    main .banner-flex #banner-infobox {
+        max-width: 355px;
+    }
+
+    main .banner-flex #banner-infobox img {
+        display: none;
+    }
 
 
 
