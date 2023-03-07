@@ -10,13 +10,14 @@
 <body>
     <header>
         <div class="layout-grid header-flex">
-            <nav>
+            <nav id="navmenu">
                 <a href="">Início</a>
                 <a href="">Sobre</a>
                 <a href="">Desafio</a>
                 <a href="">Endereço</a>
             </nav>
-            <img src="../Landing-Page/assets/Icones/Menu hamburger.svg" alt="Menu hamburger" id="menu-mobile">
+            <img src="../Landing-Page/assets/Icones/Menu hamburger.svg" alt="abre o menu mobile" id="menu-mobile" 
+            onclick="mostraMenu()">
         
         </div>
     </header>
@@ -26,8 +27,8 @@
             <div class="layout-grid">
                 <h1>Desenvolvimento <br> de Sistemas 2023</h1>
                 <hr>
+                <img src="../Landing-Page/assets/Images/mouse-down 1.svg" alt="Mouse" id="mouse" >
                 <p>Senai Informática</p>
-                <img src="../Landing-Page/assets/Images/mouse-down 1.svg" alt="Mouse" id="mouse">
             </div>
         </article>
         
@@ -92,6 +93,13 @@
             <p>Copyright © 2023  - Escola Senai de Informática</p>
         </div>
     </footer>
+
+    <script>
+        function mostraMenu() {
+            document.getElementById("navmenu").classList.toggle
+            ("mostrarMenu")
+        }
+    </script>
     
 </body>
 </html>
